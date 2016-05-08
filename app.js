@@ -3,5 +3,5 @@
  */
 'use strict';
 
-var app = angular.module('mytodo', []);
+var app = angular.module('mytodo', ['ngRoute']);
 

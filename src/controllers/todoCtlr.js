@@ -8,7 +8,7 @@ app.controller('todoIndex', function ($scope) {
     $scope.test = 'toto';
 });
 
-app.controller('todoList', function ($scope, todoProvider) {
+app.controller('todos', function ($scope, todoProvider) {
     $scope.todos = todoProvider.getTodos();
 });
 

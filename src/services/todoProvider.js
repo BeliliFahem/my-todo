@@ -6,10 +6,10 @@
 
 // data (model). Must be in service
 var todos = [
-    {'id': 1, 'title': 'Do somthing1 :)', 'lastModifDate': '08/05/2016'},
-    {'id': 2, 'title': 'Do somthing2', 'lastModifDate': '08/05/2016'},
-    {'id': 3, 'title': 'Do somthing3', 'lastModifDate': '08/05/2016'},
-    {'id': 3, 'title': 'Do somthing4', 'lastModifDate': '08/05/2016'}
+    {'id': 1, 'title': 'Do somthing1 :)', 'status':'Active', 'lastModifDate': '08/05/2016'},
+    {'id': 2, 'title': 'Do somthing2', 'status':'Active', 'lastModifDate': '08/05/2016'},
+    {'id': 3, 'title': 'Do somthing3', 'status':'Active', 'lastModifDate': '08/05/2016'},
+    {'id': 4, 'title': 'Do somthing4', 'status':'Active', 'lastModifDate': '08/05/2016'}
 
 ];
 

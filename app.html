@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app.js"></script>
+
+    <!-- routes -->
+    <script src="src/routes/todoRouting.js"></script>
+    <script src="src/routes/todoListRouting.js"></script>
+
+    <!-- controllers -->
+    <script src="src/controllers/todoCtlr.js"></script>
+    <script src="src/controllers/todoListCtlr.js"></script>
+
+    <!-- directives -->
+    <script src="src/directives/todoDirective.js"></script>
+
+    <!-- services -->
+    <script src="src/services/todoProvider.js"></script>
+    <script src="src/services/todoListProvider.js"></script>
 
     <title>Title</title>
 </head>
 <body ng-app="mytodo">
 
+<div ng-view></div>
 
-<div ng-controller="todoList">
-    <div ng-repeat="t in todos"> <p decorate-todo></p>  </div>
-
-</div>
-
-
-<script src="app.js"></script>
-<!-- controllers -->
-<script src="src/controllers/todoCtlr.js"></script>
-
-<!-- directives -->
-<script src="src/directives/todoDirective.js"></script>
-
-<!-- services -->
-<script src="src/services/todoProvider.js"></script>
 
 </body>
 </html>
