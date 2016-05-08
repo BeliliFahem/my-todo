@@ -2,28 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <!-- <script src="/bower_components/angular/angular.js"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
+    <script src="bower_components/angular/angular.js"></script>
 
     <title>Title</title>
 </head>
 <body ng-app="mytodo">
 
-<div>
-    <label>Your name:</label>
-    <input type="text" ng-model="name" placeholder="Enter a name here">
-    <hr>
-    <hr>
-    <h1>Hello {{name}} !</h1>
-</div>
 
-<div ng-controller="todoIndex"> Juste un {{test}}</div>
+<div ng-controller="todoList">
+    <div ng-repeat="t in todos"> <p decorate-todo></p>  </div>
+
+</div>
 
 
 <script src="app.js"></script>
 <!-- controllers -->
 <script src="src/controllers/todoCtlr.js"></script>
+
+<!-- directives -->
+<script src="src/directives/todoDirective.js"></script>
 
 </body>
 </html>
