@@ -6,6 +6,6 @@
 app.directive('decorateTodo', function () {
     return {
         // template
-        template:'{{t.id}} | {{t.title}} | {{t.lastModifDate}}'
+        template: '{{t.id}} | {{t.title}} | {{t.lastModifDate}}'
     }
 });
