@@ -3,14 +3,15 @@
  */
 'use strict';
 
-app.controller('todoLists', function ($scope, todoListProvider) {
-    $scope.todoLists = todoListProvider.getTodoLists()
-});
+app
+    .controller('todoLists', function ($scope, todoListProvider) {
+        $scope.todoLists = todoListProvider.getTodoLists()
+    })
 
-app.controller('todoListCreate', function ($scope) {
+    .controller('todoListCreate', function ($scope) {
 
-});
+    })
 
-app.controller('todoListDelete', function ($scope) {
+    .controller('todoListDelete', function ($scope) {
 
-});
+    });

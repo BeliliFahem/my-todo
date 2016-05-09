@@ -6,11 +6,11 @@
 app.config(function ($routeProvider) {
     $routeProvider
         .when('/todos/', {
-                controller: 'todos',
+                controller: 'todosCtrl',
                 templateUrl: '../../../MyToDo/views/todo/todos.html'
         })
         .when('/todo/create', {
-                controller: 'todoCreate',
+                controller: 'todoCreateCtrl',
                 templateUrl: '../../../MyToDo/views/todo/todoCreate.html'
         })
 });

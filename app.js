@@ -5,3 +5,8 @@
 
 var app = angular.module('mytodo', ['ngRoute']);
 
+app.directive('fastClick', function() {
+    return {
+        restrict: "A",
+    }
+});

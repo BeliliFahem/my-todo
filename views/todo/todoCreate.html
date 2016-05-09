@@ -1,3 +1,17 @@
+{{todoLists}}
+{{todo}}
+
 <form>
-    <input type="text" name="title" placeholder="What needs to be down ?"/>
+    <input type="text" name="title" placeholder="What needs to be down ?" ng-model="todo.title"/>
+
+    <label>Label : </label>
+    <select ng-options="tl.id as tl.name for tl in todoLists" ng-model="todo.idList"> </select>
+
+    <button ng-click="createNewTodo(todo)">Add note</button>
+
+    <button ng-click="count = count + 1" ng-init="count=0"> Increment</button>
+    <span>
+      count: {{count}}
+    </span>
+
 </form>
